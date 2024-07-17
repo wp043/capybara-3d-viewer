@@ -8,6 +8,9 @@ Learning how to import 3d models and make it interactive. I've used the capybara
 - Interactive animations using GSAP.
 - Ambient lighting for better visual effects.
 
+## Checkout deployed version:
+https://capybara-3d-viewer.vercel.app/
+
 ## Installations
 1. Clone the repo:
     ```bash
