@@ -18,12 +18,15 @@ scene.add(ambientLight);
 
 const loader = new GLTFLoader();
 
-let shiba;
+let capy;
 loader.load(
     '/capybara.glb',
     function (gltf) {
-        shiba = gltf.scene;
-        scene.add(shiba);
+        capy = gltf.scene;
+        scene.add(capy);
+
+        camera.position.set(8, 8, 12); 
+        camera.lookAt(shiba.position); 
     },
     undefined,
     function (error) {
@@ -56,7 +59,7 @@ function onDocumentMouseDown(event) {
   if (intersects.length > 0) {
       const jumpHeight = 1.5;
       const jumpDuration = 0.4;
-      gsap.to(shiba.position, { y: jumpHeight, duration: jumpDuration, yoyo: true, repeat: 1, ease: "power1.inOut" });
+      gsap.to(capy.position, { y: jumpHeight, duration: jumpDuration, yoyo: true, repeat: 1, ease: "power1.inOut" });
   }
 }
 document.addEventListener('mousedown', onDocumentMouseDown, false);
