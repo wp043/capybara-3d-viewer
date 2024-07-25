@@ -27,7 +27,7 @@ loader.load(
         capy.scale.set(2, 2, 2);
         scene.add(capy);
 
-        camera.position.set(8, 8, 12); 
+        camera.position.set(12, 14, 16); 
         camera.lookAt(shiba.position); 
     },
     undefined,
